@@ -23,9 +23,9 @@
           </ul>
       </nav>
     <div >
-        <form class="text-center" action="/action_page.php" method="get">
+        <form class="text-center" action="{{url_for('extract')}}" method="POST">
         <label class="text-center" for="product_id" class="form-label">Podaj kod produktu: </label>
-        <input id="product_id" name="product_id" placeholder="np.104978580">
+        <input required id="code" name="product_code" placeholder="np.104978580">
         <button onclick=toCeneo()>Pobierz</button>
         </form>
     </div>
